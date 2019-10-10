@@ -9,32 +9,44 @@ body {
     grid-template-rows: 51px auto 50px;
   
     grid-template-areas:
-        "header"
-        "main"
-        "footer";
+        "header-container"
+        "main-container"
+        "footer-container";
 }
 
-header {
+.wrapper {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.header-container{
     background-color: #41C7C7;
-    grid-area: header;
+    grid-area: header-container;
+    display: grid;
+}
+
+header{
     display: grid;
     grid-template-columns: [logo-start] fit-content(20%) [nav-start] auto [nav-end];
 }
 
-.main {
-    grid-area: main;
+.main-container {
+    grid-area: main-container;
     grid-template-rows: fit-content(30%) 40% auto;
     display: grid;
     grid-template-areas:
         "hero"
         "invention"
-        "features"
+        "features";
 }
 
-footer {
-    grid-area: footer;
+.footer-container {
+    grid-area: footer-container;
     background: lightgray;
 }
+
+
+
 
 section#hero {
     background-color: #36ADAD;

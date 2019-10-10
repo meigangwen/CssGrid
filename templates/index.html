@@ -1,33 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>CSS Grid Demo</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/main.css' ) }}">
-    <link rel="icon" href="data:,">
-</head>
-<body>
-        
-    <header>
-        
-            <a href="#" id="logo">ImportantCo</a>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-        
-    </header>
-        
-    
+{% extends "base.html" %}
 
-    <div class="main">
+{% block title %}
+Scratch中文教程 - 创作游戏，学习编程，寓教于乐
+{% endblock %}
+
+{% block content %}
+    <div class="main wrapper">
         <section id="hero">
             <div id="content">
                 <h1>Sensible Solutions</h1>
@@ -67,11 +45,4 @@
             </li>
         </ul>
     </div>
-
-   
-
-    <footer>
-        <P>My footer bar</P>
-    </footer>
-</body>
-</html>
+{% endblock %}   

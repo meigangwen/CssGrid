@@ -6,8 +6,8 @@ body {
     margin:0;
     font-family: 'Montserrat', sans-serif;
     display: grid;
-    grid-template-rows: 51px auto 100px;
-    grid-template-columns: auto;
+    grid-template-rows: 51px auto 50px;
+  
     grid-template-areas:
         "header"
         "main"
@@ -161,21 +161,6 @@ ul li a {
 
 @media screen and (max-width: 60em) {
     
-    body {
-        grid-template-columns: auto;
-        grid-template-areas:
-            "main"
-            "footer";
-    }
-
-    .main {
-        grid-template-areas:
-            "head"
-            "hero"
-            "features"
-            "invention"
-    }
-
     #features {
       
         grid-template-columns: repeat(2, auto);

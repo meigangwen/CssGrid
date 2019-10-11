@@ -20,7 +20,7 @@ body {
 }
 
 .header-container{
-    background-color: #41C7C7;
+    background-color: dodgerblue;
     grid-area: header-container;
     display: grid;
 }
@@ -42,7 +42,7 @@ header{
 
 .footer-container {
     grid-area: footer-container;
-    background: lightgray;
+    background: darkgrey;
 }
 
 
